@@ -1,14 +1,13 @@
 module.exports = {
-  usename: 'root',
+  username: 'root',
   password: 'root',
-  database: 'db_auth',
+  database: 'main',
   host: '127.0.0.1',
-  dialect: 'mysql',
-  storage: 'database.sqlite',
+  dialect: 'postgres',
   logging: false,
   define: {
     timestamps: true,
-    underscored: true,
-    underscoredAll: true,
+    underscored: false,
+    underscoredAll: false,
   },
 };
