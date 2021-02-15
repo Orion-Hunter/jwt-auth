@@ -35,7 +35,7 @@ class CreateUserService {
     const checkUserExists = await this.userRepository.findByLogin(login);
     console.log('checkUserExists');
     if (checkUserExists) {
-      throw new Error('The login address has already used');
+      throw new Error('The login has already used');
     }
     const hashedPassword = await hash(password, 8);
 

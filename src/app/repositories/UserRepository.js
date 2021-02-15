@@ -24,7 +24,7 @@ class UserRepository {
    * @returns { Promise<User>}
    */
   async create({ login, password }) {
-    const user = models.Usuario.build({
+    const user = models.User.build({
       login,
       password,
     });
